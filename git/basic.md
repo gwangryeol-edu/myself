@@ -50,3 +50,5 @@
 `git diff`
 
 `git log`
+
+오타 생성
