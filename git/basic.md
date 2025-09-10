@@ -52,6 +52,7 @@
 `git log`
 
 # Git GUI
+Git을 커맨드 라인(CLI)이 아닌 그래픽 사용자 인터페이스(GUI)로 편하게 사용할 수 있게 해주는 도구들
 1. souce control
 - Changes
     - 작업 트리 영역
@@ -60,3 +61,15 @@
 2. Message 남기고 Commit
 3. 확장 프로그램 "Git Gragh" 설치
 - souce control에서 그래프로 확인 가능
+
+# .gitignore
+- git으로 관리하면 안되는 파일, 폴더를 관리
+## 사용법
+1. 가장 큰 파일에 `.gitignore`ge 파일 생성
+2. git으로 관리하고 싶지 않은 파일, 폴더 작성
+    - 파일: 파일명 작성(ex.secret)
+    - 폴더: 폴더 경로 작성(ex.secret_folder/)
+## 주의사항
+- `.gitignore`는 Git이 파일을 추적하기 전에만 유효 
+- 이미 한 번이라도 커밋된 파일은 `.gitignore`에 추가해도 계속해서 변경 사항을 추적
+- [gitignore.io](https://www.toptal.com/developers/gitignore/)사이트를 활용하면 사용하는 운영체제, 언어, 프레임워크에 맞는 보편적인 `.gitignore` 파일을 쉽게 생성 가능
