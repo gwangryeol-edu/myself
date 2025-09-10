@@ -77,3 +77,63 @@ Git을 커맨드 라인(CLI)이 아닌 그래픽 사용자 인터페이스(GUI)�
 - `.gitignore`는 Git이 파일을 추적하기 전에만 유효 
 - 이미 한 번이라도 커밋된 파일은 `.gitignore`에 추가해도 계속해서 변경 사항을 추적
 - [gitignore.io](https://www.toptal.com/developers/gitignore/)사이트를 활용하면 사용하는 운영체제, 언어, 프레임워크에 맞는 보편적인 `.gitignore` 파일을 쉽게 생성 가능
+
+# Git Hub
+
+원격 저장소
+
+[깃허브](https://github.com/dashboard)
+
+## 지역 저장소 ↔ 원격 저장소 연결
+
+원격 주소 정보 = 인터넷 주소창
+
+1. 길 생성
+    
+    `git remote add origin https://github.com/gwangryeol-edu/edu_for_sesac.git(원격 저장소 주소)`
+    
+    - `git remote -v` 를 통해 확인 가능
+    
+    ```markdown
+    [result]
+    origin  https://github.com/gwangryeol-edu/edu_for_sesac.git (fetch)
+    origin  https://github.com/gwangryeol-edu/edu_for_sesac.git (push)
+    ```
+    
+2. 권한 설정
+    - `git push -u origin main`
+        - `git push origin main` : 지역 저장소 → 원격 저장소
+        - `git pull origin main` :  원격 저장소 → 지역 저장소
+        - `git remote remove origin` : 원격 저장소 해제
+3. Git Hub 새로고침
+
+### 워크 플로우
+
+1. 원격 저장소(git hub→new repository) 생성
+2. 지역 저장소 → 원격 저장소 연결
+    1. `git remote add origin 원격 저장소 주소`
+    2. `git push -u origin main`
+    3. `git remote -v` 
+3. 지역 저장소 `commit`
+4. 지역 저장소 파일 생성, 삭제
+5. 지역 저장소 → 원격 저장소 **push**
+    1. `git push origin main`
+6. 원격 저장소 파일 생성,삭제
+7. 지역 저장소 ← 원격 저장소 **pull**
+    1. `git pull origin main`
+
+## 원격 저장소 생성, 연결, 동기화
+
+## git push origin main, origin은 무엇인가?
+- `git push <원격 저장소 명> <브런치 명>`/ `git pull <원격 저장소 명> <브런치 명>`
+- `git remote add <원격 저장소 명> <원격 저장소 주소>`
+- `origin` 이라는 원격 저장소 명의 **관습적인 이름**
+    - 다른 이름으로 설정할 수 있지만 웬만하고 `origin`으로 하는게 좋음
+## 원격 저장소란 무엇인가?
+- 별도의 서버에 저장하여 사용자가 다른 컴퓨터로도 작업 환경을 다운받아 사용할 수 있는 저장소
+## 지역 저장소와 원격 저장소의 구분
+- 지역 저장소: 특정 pc에만 저장되어 있어 다른 pc로 접근이 매우 한정됨
+- 원격 저장소: 서버에 저장되어 있어 권한이 있는 다른 pc로도 접근이 가능
+    - 원격 저장소 확인: `git remote -v`
+### 주의사항
+- 서로의 커밋 이력이 항상 일치해야됨
