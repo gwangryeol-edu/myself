@@ -53,9 +53,9 @@
 
 # Git GUI
 1. souce control
-- Staged Changes
-    - 작업 트리 영역
 - Changes
+    - 작업 트리 영역
+- Staged Changes
     - 스테이징 영역
 2. Message 남기고 Commit
 3. 확장 프로그램 "Git Gragh" 설치
