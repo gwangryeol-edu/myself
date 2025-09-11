@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <a href="http://naver.com">naver.com</a>
 
     <h1>마크 다운의 #</h1>
@@ -13,11 +13,103 @@
     <h3>마크 다운의 ###</h3>
     <h6>마크 다운의 ######</h6>
     <p>마크 다운의 일반적인 텍스트(문단)</p>
-    <a>마크 다운의 []()</a><br>
-    <img alt="대체 텍스트" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2aRJR6dWUGsjhkUzKkGp-3787npBEJcJblg&s"><br>
+    <a>마크 다운의 []()</a><br />
+    <img
+      alt="대체 텍스트"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2aRJR6dWUGsjhkUzKkGp-3787npBEJcJblg&s"
+    /><br />
     ![대체텍스트](이미지경로, source)
-    <br>
-    <br>
-    <hr>
-</body>
+    <br />
+    <br />
+    <hr />
+
+    <!-- command+/ -->
+    <!-- id 속성과 class 속성 -->
+    <!-- id 속성은 문서 내에서 요소를 구별한 고유한 값(식별자) -->
+    <p id="1">1</p>
+    <p id="2">2</p>
+    <p>3</p>
+
+    <!-- class 속성은 문서내에서 요소를 그룹화하는 값 -->
+    <p class="1">4</p>
+    <p class="1">4</p>
+    <p class="5">5</p>
+    <p class="5">5</p>
+    <p>6</p>
+
+    <!-- id, class의 값은 알파벳 소문자로 시작해야 -->
+    <!-- 하나의 클래스에서 띄어쓰기가 불가능, 띄어쓰기로 여러 클래스 가능 -->
+    <p class="fruit red">빨간 사과</p>
+    <p class="fruit blue">파란 사과</p>
+    <p class="animal red">빨간 강아지</p>
+    <p class="animal blue">파란 고양이</p>
+
+    <hr />
+
+    <!-- 요소 중첩 -->
+    <div>division(분할)</div>
+
+    <div>
+      <div>
+        <h1>팀 버너스리</h1>
+        <h2>Berners-LEE</h2>
+      </div>
+
+      <img
+        alt="팀 버너스리"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sir_Tim_Berners-Lee.jpg/330px-Sir_Tim_Berners-Lee.jpg"
+      /><br />
+
+      <div>
+        <p>출생</p>
+        <p>1955년 6월 8일</p>
+      </div>
+      <div>
+        <p>출신학교</p>
+        <p>옥스퍼드 대학교 물리학</p>
+      </div>
+      <div>
+        <p>배우자</p>
+        <p>낸시 칼슨(1990 - 2011)</p>
+        <p>옥스퍼드 대학교 물리학(2014 - )</p>
+      </div>
+      <div>
+        <p>자녀</p>
+        <p>1남2녀</p>
+      </div>
+      <div>
+        <p>수상</p>
+        <p>튜링상</p>
+        <p>메리트 훈장</p>
+        <p>대영 제국 훈장 2등급</p>
+        <p>왕립학회 회원</p>
+        <p>왕립공학학회 회원</p>
+        <p>왕립예술학회 회원</p>
+        <p>영국 컴퓨터학과 최고회원</p>
+      </div>
+      <div>
+        <p>분야</p>
+        <p>컴퓨터 과학</p>
+      </div>
+      <div>
+        <p>소속</p>
+        <p>w3c</p>
+        <p>사우샘프턴 대학></p>
+        <p>플레시</p>
+        <p>매사추세츠 공과대학교</p>
+      </div>
+    </div>
+
+    <!-- ul, ol, li -->
+    <!-- - / 1., 2. -->
+    <ul>
+      <li>순서가 없는 태그 1</li>
+      <li>순서가 없는 태그 2</li>
+    </ul>
+
+    <ol>
+      <li>순서가 있는 태그 1</li>
+      <li>순서가 있는 태그 2</li>
+    </ol>
+  </body>
 </html>

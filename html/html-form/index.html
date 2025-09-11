@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form(tab name)</title>
+  </head>
+  <body>
+    <!-- http://127.0.0.1:5501/html/html-form/index.html?text=dfasd&password=sadfsad&checkbox=체크박스1&radio=on# 
+    http://127.0.0.1:5501/html/html-form/index.html?text=텍스트33&password=qlalfqjsgh33&checkbox=체크박스1&checkbox=체크박스2&radio=체크박스1# 
+    -->
+    <form action="#">
+      <input type="text" name="text" />
+      <input type="password" name="password" />
+      <div>
+        <label for="check1">체크박스1</label>
+        <input type="checkbox" id="check1" value="체크박스1" name="checkbox" />
+        <label for="check2">체크박스2</label>
+        <input type="checkbox" id="check2" value="체크박스2" name="checkbox" />
+      </div>
+
+      <div>
+        <label for="radio1">라디오1</label>
+        <input type="radio" id="radio1" value="체크박스1" name="radio" />
+        <label for="radio2">라디오2</label>
+        <input type="radio" id="radio2" value="체크박스2" name="radio" />
+      </div>
+      <div>
+        <!-- <input type="file" />
+        <input type="date" />
+        <input type="datatime" />
+        <input type="color" name="" id="" /> -->
+      </div>
+      <div>
+        <textarea name="텍스트 에어리어" id="textarea" ></textarea>
+      </div>
+      <div>
+        <!-- select 와 option은 세트 ul, li 관계와 유사-->
+        <select name="셀렉트" id="select">
+          <option>국가</option>
+          <option>대한민국</option>
+          <option>미국</option>
+          <option>중국</option>
+        </select>
+
+      </div>
+      <input type="submit" value="전송" />
+    </form>
+  </body>
+</html>
