@@ -6,3 +6,4 @@
 - 25.9.8 : OT
 - 25.9.9 : AI, GEMINI CLI
 - 25.9.10 : git, gitHub, clone
+- 25.9.11 : 
