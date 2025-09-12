@@ -1,0 +1,74 @@
+.padding-box {
+  /* 상하좌우 공통 패딩 */
+  /* padding: 0.75rem; */
+
+  /* 각 방향 개별 패딩 */
+  padding-left: 0.75rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.border-box {
+  border-radius: 2rem;
+  border-color: red;
+  border-width: 10px;
+  border-style: dashed;
+
+  border: 10px red dashed;
+}
+
+span {
+  margin: 20px;
+}
+
+.margin-1 {
+  height: 100px;
+  background-color: blue;
+  margin-bottom: 100px;
+}
+/* 사이에 마진이 300px있을거같지만 작은 마진이 큰 마진에 중첩됨
+결국엔 200px만 남음 */
+.margin-2 {
+  height: 100px;
+  background-color: gray;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+/* 마찬가지로 마진 중첩에 의해 작은 마진은 무시됨 */
+.margin-3 {
+  height: 100px;
+  background-color: red;
+  margin-top: 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: chartreuse;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
+/* 박스 사이즈를 계산할때 */
+
+/* 컨텐츠로만 넓이 높이 결정 */
+/* 기본값 */
+.content-box {
+  box-sizing: content-box;
+}
+/* 컨텐츠+패딩+테두리를 포함해서 결정 */
+/* 박스를 만들때 테두리까지 포함하기 때문에 사이즈 계산하기 쉬움 */
+.border-box {
+  box-sizing: border-box;
+}
+/* 요즘 추세
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}  */
+/* 개발자가 예상하기 쉽도록 모든 기본 설정을 초기화하는 문서 */
+/* https://ykss.netlify.app/translation/a_more_modern_css_reset/ */

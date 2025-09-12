@@ -1,0 +1,16 @@
+/* 태그 선택자 */
+p {
+  color:red
+}
+h1 {
+  font-size: 50;
+  color: aqua;
+}
+
+/* 클래스 선택자 */
+.class1{
+  background-color: blueviolet;
+}
+.class2{
+  font-weight: bold;
+}

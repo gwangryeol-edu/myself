@@ -1,0 +1,20 @@
+.header{
+  height: 200px;
+  background-color: lightblue;
+}
+
+/* stocky-> relative + fixed */
+.sticky{
+  height: 100px;
+  width: 100%;
+  background-color: tomato;
+  position: sticky;
+  /* 어디서 고정이 될지 부여를 해야됨 */
+  top: 50px;
+}
+
+.content
+{
+  height: 2000px;
+  background-color: lightgrey;
+}

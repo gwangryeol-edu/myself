@@ -1,0 +1,52 @@
+.parent {
+  background-color: crimson;
+  height: 600px;
+  /* <body>는 기준이 없기 때문에 상대비율 사용 X */
+}
+
+.child1 {
+  background-color: darkblue;
+  width: 50%;
+  height: 50%;
+}
+.child2 {
+  background-color: gold;
+  width: 25%;
+  height: 50%;
+}
+
+.parent-font {
+  font-size: 30px;
+}
+.child-font1 {
+  font-size: 0.5em;
+}
+.child-font2 {
+  font-size: 2em;
+}
+.child-child-font2 {
+  font-size: 2em;
+}
+
+.rem-font-1{
+  font-size: 0.5rem;
+}
+.rem-font-2{
+  font-size: 2rem;
+}
+
+/* veiw port */
+.full-height {
+  height: 100vh;
+
+  background-color: mediumslateblue;
+}
+
+.parent-div {
+  color: hotpink;
+  font-size: 10rem;
+  border: 6px brown solid;
+}
+.child-div{
+  border: 4px red dashed;
+}
