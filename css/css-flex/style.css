@@ -1,0 +1,106 @@
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #333;
+  padding: 10px;
+}
+.flex-item1 {
+  padding: 20px;
+  background-color: lightblue;
+  margin: 5px;
+}
+
+.flex-container2 {
+  display: flex;
+  justify-content: center; /* 플렉스 아이템을 주 축에서 가운데 정렬 */
+  border: 2px solid #333;
+  padding: 10px;
+}
+.flex-item2 {
+  padding: 20px;
+  background-color: lightcoral;
+  margin: 5px;
+}
+
+.flex-container3 {
+  display: flex;
+  height: 200px; /* 교차 축 정렬을 확인하기 위한 높이 설정 */
+  align-items: center; /* 플렉스 아이템을 교차 축에서 가운데 정렬, */
+  /* align이 없으면 컨테이너에 맞춰서 아이템 박스 높이가 자동으로 정해짐 */
+  border: 2px solid #333;
+  padding: 10px;
+}
+.flex-item3 {
+  padding: 20px;
+  background-color: lightgreen;
+  margin: 5px;
+}
+
+.flex-container4 {
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap; /* 아이템을 여러 줄로 나눠 배치 */
+  border: 2px solid #333;
+  padding: 10px;
+}
+.flex-item4 {
+  width: 150px;
+  padding: 20px;
+  background-color: lightyellow;
+  margin: 5px;
+}
+
+.flex-container5 {
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄로 배치 */
+  height: 300px;
+  align-content: center; /* 여러 줄을 교차 축의 중앙에 정렬 */
+  border: 2px solid #333;
+  padding: 10px;
+}
+.flex-item5 {
+  width: 100px;
+  padding: 20px;
+  background-color: lightgoldenrodyellow;
+  margin: 5px;
+}
+
+.flex-container6 {
+  display: flex;
+  gap: 1rem;
+}
+.flex-item6 {
+  padding: 20px;
+  background-color: lightcoral;
+}
+
+.flex-container7 {
+  display: flex;
+  height: 200px;
+  align-items: flex-start;
+  border: 2px solid #333;
+  padding: 10px;
+}
+.flex-item7 {
+  padding: 20px;
+  background-color: lightpink;
+  margin: 5px;
+}
+.item-special {
+  align-self: center;
+  background-color: orange;
+}
+
+.flex-container8 {
+  display: flex;
+  flex-direction: row; /* 가로 배치 */
+  border: 2px solid #333;
+  padding: 10px;
+}
+
+.flex-item8 {
+  flex-basis: 200px; /* 기본 너비를 200px로 설정 */
+  padding: 20px;
+  background-color: lightsteelblue;
+  margin: 5px;
+}

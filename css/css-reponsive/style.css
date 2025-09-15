@@ -1,0 +1,20 @@
+/* 미디어 쿼리 */
+
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+}
+
+/* 너비가 767 이하일 때 */
+@media (max-width: 767px) {
+  .flex-container1 {
+    flex-direction: column;
+  }
+}
