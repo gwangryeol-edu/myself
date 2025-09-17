@@ -1,5 +1,22 @@
 .flex-container1 {
+  /*************************
+  flex-basis -> 항목의 크기 결정
+  - 기본값은 auto
+  - display:flex:속성만 지정되어 있으먄 flex 항목들이 각 내용물 크기만큼 공간 차지 
+  ************************
+  flex-grow -> flex 항목 별로 주축 방향 크기가 flex-basis값 이상으로 늘어날 수 있음
+  - 각 항목에 지정된 grow값의 비율에 따라 남은 공간이 분배
+   *************************/
+
+  /* flex 컨테이너 생성 */
   display: flex;
+  /*  주축 설정 
+  flex-direction -> 가로축 세로축 결정
+  row -> [기본깂], 아이템이 가로 방향으로 흐름(좌->우) 
+  row-reverse -> 아이템이 가로 방향으로 흐흠(좌->우)
+  column -> 아이템이 세로 방향으로 흐름(상->하)
+  column-reverse -> 아이템이 세로 방향으로 흐름(하->상)
+  */
   flex-direction: row;
   border: 2px solid #333;
   padding: 10px;
@@ -12,6 +29,34 @@
 
 .flex-container2 {
   display: flex;
+  /*************************
+  justify-content -> 좌우 정렬
+  - flex-start [default]
+    - 컨테이너의 왼쪽으로 정렬
+  - flex-end
+    - 컨테이너의 오른쪽으로 정렬
+  - center
+    - 컨테이너의 중앙으로 정렬
+  - space-between
+    - 아이템들 사이에 동일한 간격을 둠
+  - space-around
+    - 아이템들 주위에 동일한 간격을 둠
+  - space-evenly
+    - 오든 간격을 동일하게 둠
+  *************************/
+  /*************************
+  align-items -> 세로 축 기준 정렬
+  - flex-start
+    - 컨테이너의 최상단으로 정렬
+  - flex-end
+    - 컨테이너의 최하단으로 정렬
+  - center
+    - 컨테이너의 중앙으로 정렬
+  - baseline
+    - 컨테이너의 시작 위치에 정렬
+  - stretch [default]
+    - 컨테이너에 맞게 height 늘림
+  *************************/
   justify-content: center; /* 플렉스 아이템을 주 축에서 가운데 정렬 */
   border: 2px solid #333;
   padding: 10px;
@@ -39,6 +84,8 @@
 .flex-container4 {
   display: flex;
   width: 400px;
+  /* 복수행 flex 컨테이너 지정할 떄 사용
+  flex항목의 폭이 지정되어 있고, 항목들의 폭은 flex항목의 width를 넘어 갈때 여러 행에 나열 가능 */
   flex-wrap: wrap; /* 아이템을 여러 줄로 나눠 배치 */
   border: 2px solid #333;
   padding: 10px;
