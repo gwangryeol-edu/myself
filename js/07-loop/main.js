@@ -24,3 +24,9 @@ for (let number2 = 0; number2 < 5; number2 = number2 + 1) {
 for (let i = 0; i <= 5; i++) {
   console.log(`${i} 번 실행`)
 }
+
+/*
+for (let i = 0; i < 5; i++) {
+  console.log("hello");
+}
+*/

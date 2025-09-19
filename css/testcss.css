@@ -1,0 +1,89 @@
+.highlight {
+  background-color: yellow;
+  padding: 5px;
+}
+
+/* * {
+  color: red;
+} */
+
+/* 모든 p 태그의 글자를 파란색으로 만들기 */
+/* p {
+  color: blue;
+} */
+
+/* 모든 h1 태그의 글자를 크고 굵게 만들기 */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#main-header {
+  background-color: navy;
+  color: white;
+  padding: 20px;
+}
+
+[type="text"] {
+  color: red;
+}
+
+[placeholder] {
+  color: blue;
+}
+
+div p {
+  color: blue;
+  font-style: italic;
+}
+
+/* 제목 태그들에 같은 스타일 적용 */
+h1,
+h2,
+h3 {
+  color: navy;
+  font-family: Arial, sans-serif;
+}
+
+/* 글자 색상 */
+.text-red {
+  color: red;
+  color: #ff0000;
+  color: rgb(255, 0, 0);
+}
+
+/* 글자 크기 */
+.text-large {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-size: 150%;
+}
+
+/* 글자 굵기 */
+.text-bold {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+/* 텍스트 정렬 */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+/* 배경 색상 */
+.bg-color {
+  background-color: #f0f0f0;
+  background-color: rgba(255, 0, 0, 0.5); /* 투명도 포함 */
+}
+
+/* 배경 이미지 */
+.bg-image {
+  background-image:url("./testimg.png");
+  background-size: cover; /* 요소 전체를 덮도록 */
+  background-size: contain; /* 이미지 전체가 보이도록 */
+  background-repeat: no-repeat;
+  background-position: center;
+}
