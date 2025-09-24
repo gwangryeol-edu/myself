@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- axios CDN링크 -->
+    <!-- 자바스크립트 파일이 아니라서 axios 실행 안됨 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent"></div>
+    <script>
+      // API 사용을 위한 기본 주소(URL)
+      const DOMAIN_NAME = "https://dummyjson.com";
+
+      // id가 parent인 요소를 선택
+      const parentTag = document.querySelector("#parent");
+
+      // 상품 목록을 요청할 비동기(async) 함수
+      async function getProducts() {
+        //url: API 요청 주소
+        //method: 요청방법
+        const config = { url: `${DOMAIN_NAME}/products`, method: `get` };
+        const response = await axios(config);
+
+        // 응답 데이터에서 data 속성 추출
+        const data = response["data"];
+        const products = data["products"];
+
+        products.forEach((element) => {
+          const title = element["title"];
+          const pTag = document.createElement("p");
+          pTag["textContent"] = `title: ${title}`;
+
+          parentTag.append(pTag);
+        });
+      }
+
+      getProducts();
+
+      // 태그명이 button인 요소의 click 이벤트가 발생했을 때
+      // 함수 getProduct가 호출 코드 작성
+
+      // 1. 태그명이 button 요소를 선택(querySelector)
+      const buttonTag = document.querySelector("button");
+      // 2. 요소를 변수에 할당(저장)
+      buttonTag.addEventListener("click", ()=>{
+        getProducts()
+      })
+      // 3. addEventListener() 메서드로 요소에 click이벤트에 대한 핸들러 등록
+
+      async function testConnect() {
+        // 요청 주소 -> url
+        // 요청 방법 -> method
+        const config = { url: `${DOMAIN_NAME}/test`, method: "get" };
+        // axios 를 활용해서 요청
+        const response = await axios(config);
+        console.log(response["data"]);
+      }
+      // testConnect();
+    </script>
+  </body>
+</html>

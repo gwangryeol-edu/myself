@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <div id="parent">
+      <div id="child"></div>
+    </div>
+  </head>
+  <body>
+    <!-- <script>
+      // div 태그 요소 생성, 변수에 할당
+      const divTag = document.createElement("div");
+
+      // div 태그에 id 속성 "container"지정
+      // 요소 .setAttribute("속성명", "속성값")
+      divTag.setAttribute("id", "container");
+
+      // p 태그 요소 생성, 변수에 할당
+      const pTag = document.createElement("p");
+      // 요소의 textcontent 속성으로 텍스트 설정
+
+      // append() 메서드 body 태그에 divTag를 추가]
+      const bodyTag = document.querySelector("bodyTag");
+      bodyTag.append(divTag, pTag);
+
+      //h1 태그 요소를 생성하고 변수에 할당
+      const h1Tag = document.createElement("h1");
+      // 텍스트 H1 설정
+      h1Tag["textContent"] = "H1";
+
+      // id가 child 인 요소를 선택하고 변수에 할당
+      const childTag = document.querySelector("#child");
+      // id가 parent 인 요소를 선택하고 변수에 할당
+      const parent = document.querySelector("#parent");
+
+      // 부모 요소 parentTag, 특정 자식 요소 childTag, 추가할 요소 h1Tag
+      parentTag.insertBefore(h1Tag, childTag)
+
+    </script> -->
+    <!-- event-1.html -->
+    <!-- onclick 속성에 함수를 지정 -->
+    <!-- onclick 속성은 HTML 문서에 포함 -->
+    <button onclick="clickEvent()">클릭</button>
+
+    <!-- oninput 속성: 입력했을 떄 발생하는 이벤트 -->
+    <input type="text" oninput="console.log(`입력`)" />
+    <script>
+      function clickEvent() {
+        alert("클릭");
+      }
+    </script>
+  </body>
 </html>
