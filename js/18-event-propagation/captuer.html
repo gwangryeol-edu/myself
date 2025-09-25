@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child">
+        <button id="button">클릭</button>
+      </div>
+    </div>
+    <script>
+      // 각 요소를 id 선택자를 활용해서 선택(querySelector)하고, 변수에 할당
+      const parent = document.querySelector("#parent");
+      const child = document.querySelector("#child");
+      const button = document.querySelector("#button");
+
+      // 3개의 addEventListner()로 핸들러 등록
+      // 세번째 매개변수(capture: true)
+      // 캡처링 단계에서 이벤트 처리 (세 번째 매개변수: {capture: true})
+      parent.addEventListener(
+        "click",
+        () => {
+          console.log("최상위 div 캡처링");
+        },
+        { capture: true }
+      );
+
+      child.addEventListener(
+        "click",
+        () => {
+          console.log("상위 div 캡처링");
+        },
+        { capture: true }
+      );
+
+      button.addEventListener("click", () => {
+        console.log("버튼 클릭");
+      });
+    </script>
+  </body>
+</html>
