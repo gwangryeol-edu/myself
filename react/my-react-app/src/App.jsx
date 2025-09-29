@@ -11,6 +11,8 @@ import OnClick from "./components/EventHandling/OnClick";
 import OnChange from "./components/EventHandling/OnChange";
 import OnSubmit from "./components/EventHandling/OnSubmit";
 import Parent from "./components/props/Parent";
+import Card from "./components/PropsFunction/Card";
+import CardContainer from "./components/PropsFunction/CardContainer";
 
 // import MyButton from "./components/Component/MyButton";
 // import MyList from "./components/Component/MyList";
@@ -33,7 +35,9 @@ function App() {
       {/* <OnClick />
       <OnChange />
       <OnSubmit /> */}
-      <Parent/>
+      {/* <Parent/> */}
+      <Card />
+      <CardContainer/>
     </div>
   );
 }

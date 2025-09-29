@@ -1,5 +1,5 @@
 import React from "react";
-import Child from "./Child";
+// import Child from "./Child";
 
 // 1. Child 컴포넌트를 불러오기
 // 2. Child 컴포넌트를 parentz 컴포넌트 내부에 배치
