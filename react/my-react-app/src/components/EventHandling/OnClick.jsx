@@ -43,7 +43,7 @@ export default function OnClick() {
       <button
         className="cursor-pointer border-2 p-2 bg-green-300"
         onClick={(event) => {
-          handleClick();
+          handleClick(event);
         }}
       >
         클릭

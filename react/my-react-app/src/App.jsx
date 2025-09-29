@@ -10,6 +10,8 @@ import MyList from "./components/Componet/MyList";
 import OnClick from "./components/EventHandling/OnClick";
 import OnChange from "./components/EventHandling/OnChange";
 import OnSubmit from "./components/EventHandling/OnSubmit";
+import Parent from "./components/props/Parent";
+
 // import MyButton from "./components/Component/MyButton";
 // import MyList from "./components/Component/MyList";
 
@@ -28,9 +30,10 @@ function App() {
   return (
     <div>
       {/* OnClick 컴포넌트 실행(렌더링) */}
-      <OnClick />
+      {/* <OnClick />
       <OnChange />
-      <OnSubmit />
+      <OnSubmit /> */}
+      <Parent/>
     </div>
   );
 }
@@ -38,7 +41,8 @@ function App() {
 export default App;
 
 // 구조 1. import 영역
-// 구조 2. App 컴포넌트 영역
+// 구조 2. import Parent from './components/props/Parent';
+// App 컴포넌트 영역
 //  구조 2-1 내부 변수, 상태 함수 정의
 //  구조 2-2 return(UI 변환)
 // 구조 3. export 영역
