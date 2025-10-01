@@ -12,7 +12,9 @@ import OnChange from "./components/EventHandling/OnChange";
 import OnSubmit from "./components/EventHandling/OnSubmit";
 import Parent from "./components/props/Parent";
 import Card from "./components/PropsFunction/Card";
-import CardContainer from "./components/PropsFunction/CardContainer";
+// import CardContainer from "./components/PropsFunction/;
+import Container from "./components/State/Container";
+import StateBasic from "./components/State/StateBasic";
 
 // import MyButton from "./components/Component/MyButton";
 // import MyList from "./components/Component/MyList";
@@ -36,8 +38,10 @@ function App() {
       <OnChange />
       <OnSubmit /> */}
       {/* <Parent/> */}
-      <Card />
-      <CardContainer/>
+      {/* <Card />
+      <CardContainer/> */}
+      <Container />
+      <StateBasic />
     </div>
   );
 }
