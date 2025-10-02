@@ -1,6 +1,7 @@
 import Container from "./components/PostLimitSkip/Container";
 import MovieDetail from "./components/TMDB/MovieDetail";
 import MovieList from "./components/TMDB/MovieList";
+
 MovieDetail;
 MovieList;
 Container;
@@ -8,11 +9,7 @@ Container;
 // 컴포넌트 불러오기
 
 function App() {
-  return (
-    <div>
-      <MovieDetail />
-    </div>
-  );
+  return <MovieList />;
 }
 
 export default App;
