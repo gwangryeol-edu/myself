@@ -8,6 +8,8 @@ import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../layout/RootLayout";
 import AuthLayout from "../layout/AuthLayout.jsx";
 import ProtectedLayout from "../layout/ProtectedLayout.jsx";
+import PostList from "../pages/RootPages/PostList.jsx";
+import PostDetail from "../pages/RootPages/PostDetail.jsx"
 
 // 페이지 컴포넌트 불러오기
 import Home from "../pages/RootPages/Home.jsx";
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "about",
         Component: About,
+      },
+      {
+        path: "posts",
+        Component: PostList,
+      },
+      {
+        path: "posts/:postId",
+        Component: PostDetail,
       },
       {
         // path 속성 X
