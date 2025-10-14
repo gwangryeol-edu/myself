@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 
 // 경로 상수 객체 불러오기
-import PATHS from "../constants/paths";
+import PATHS from "../constants/paths.js";
 
 export default function RootLayout() {
   return (

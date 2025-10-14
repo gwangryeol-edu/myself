@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-import PATHS from "../../constants/paths";
+// import PATHS from "../constants/paths.js";
+import PATHS from "../constants/paths.js";
 
 // useSearchParams 훅 불러오기
 // useSearchParams 훅 : 쿼리 파라미터 관리
