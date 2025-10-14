@@ -38,8 +38,8 @@ export default function PostList() {
         },
       };
 
-      // ✅ 상수 경로 적용 (기존 URL 제거)
-      const res = await axios(`https://dummyjson.com${PATHS.ROOT.POSTS}`, config);
+      // https://dummyjson.com/posts?sortBy=title&order=asc
+      const res = await axios(`https://dummyjson.com/posts`, config);
       setPosts(res.data.posts);
       setLoading(false);
     };

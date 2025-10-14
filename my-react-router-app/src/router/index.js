@@ -1,22 +1,7 @@
-// React Router의 createBrowserRouter 불러오기
-// createBrowserRouter 함수
-// 라우터 설정을 생성하는 함수
-// 라우터 : 주소(URL)와 컴포넌트를 매핑
+// src/router/index.js
 import { createBrowserRouter } from "react-router-dom";
-
-// 레이아웃 컴포넌트 불러오기
 import RootLayout from "../layout/RootLayout";
-import AuthLayout from "../layout/AuthLayout.jsx";
-import ProtectedLayout from "../layout/ProtectedLayout.jsx";
-
-// 페이지 컴포넌트 불러오기
-import Home from "../pages/RootPages/Home.jsx";
-import About from "../pages/RootPages/About.jsx";
-import Profile from "../pages/RootPages/Profile.jsx";
-
-import AuthHome from "../pages/AuthPages/AuthHome.jsx";
-import Signup from "../pages/AuthPages/Signup.jsx";
-import Login from "../pages/AUthPages/Login.jsx";
+import PostList from "../pages/RootPages/PostList";
 
 import PATHS from "../constant/path.js";
 import PostList from "../pages2/RootPages/PostList.jsx";
