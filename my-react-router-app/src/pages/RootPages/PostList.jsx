@@ -1,7 +1,7 @@
-// src/pages/PostList.jsx
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import PATHS from "../constant/path"; // ✅ 추가
 
 export default function PostList() {
   const [posts, setPosts] = useState([]);
