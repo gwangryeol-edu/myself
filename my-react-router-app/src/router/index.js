@@ -18,10 +18,13 @@ import AuthHome from "../pages/AuthPages/AuthHome.jsx";
 import Signup from "../pages/AuthPages/Signup.jsx";
 import Login from "../pages/AUthPages/Login.jsx";
 
+import PATHS from "../constant/path.js";
+import PostList from "../pages2/RootPages/PostList.jsx";
+
 // 라우터 설정 생성
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: PATHS.ROOT.INDEX,
     Component: RootLayout,
     children: [
       // 중첩할 자식 경로 객체를 정의하는 배열
@@ -31,16 +34,21 @@ const router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "about",
+        path: PATHS.ROOT.ABOUT,
         Component: About,
       },
+      {
+        path: PATHS.ROOT.POSTS,
+        Component: PostList,
+      },
+
       {
         // path 속성 X
         Component: ProtectedLayout,
         // 보호할 경로와 컴포넌트 정의
         children: [
           {
-            path: "profile",
+            path: PATHS.ROOT.PROFILE,
             Component: Profile,
           },
         ],
