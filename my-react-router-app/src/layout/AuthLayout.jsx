@@ -17,6 +17,7 @@ export default function AuthLayout() {
             `${baseClass} ${isActive ? activeClass : ""}`
           }
           to="/auth"
+          end
         >
           인증 홈페이지
         </NavLink>
