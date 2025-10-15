@@ -1,52 +1,36 @@
-import { Outlet } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+// src/layout/AuthLayout.jsx
+// 인증 레이아웃 컴포넌트
+// 로그인, 회원가입 등 인증 관련 페이지들을 위한 레이아웃
+
+import { Outlet, Link } from "react-router-dom";
+import PATHS from "../constants/paths";
+
 export default function AuthLayout() {
-  // NavLink 기본 class
-  const baseClass = `text-blue-900 font-bold p-2`;
-
-  // NavLink 활성화 class
-  const activeClass = `border-2 border-red-900`;
-
   return (
-    <div>
-      <div className="flex gap-2">
-        {/* JSX 보간법 + 템플릿 리터럴 + 화살표 함수 + 삼항연산자 혼합 */}
-        {/* 삼항연산자는 표현식이라서 템플릿 리터럴이 적용 가능하다 */}
-        <NavLink
-          className={({ isActive }) =>
-            `${baseClass} ${isActive ? activeClass : ""}`
-          }
-          to="/auth"
-          end
-        >
-          인증 홈페이지
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            `${baseClass} ${isActive ? activeClass : ""}`
-          }
-          to="/auth/login"
-        >
-          로그인 페이지
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            `${baseClass} ${isActive ? activeClass : ""}`
-          }
-          to="/auth/signup"
-        >
-          회원가입 페이지
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            `${baseClass} ${isActive ? activeClass : ""}`
-          }
-          to="/"
-        >
-          홈페이지
-        </NavLink>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* 인증 페이지 헤더 */}
+      <div className="bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4">
+            <Link 
+              to={PATHS.HOME}
+              className="text-xl font-bold text-blue-600 hover:text-blue-800 transition-colors"
+            >
+              React Router App
+            </Link>
+            <div className="text-sm text-gray-500">
+              🔐 인증 페이지
+            </div>
+          </div>
+        </div>
       </div>
-      <Outlet />
+      
+      {/* 인증 페이지 내용 */}
+      <div className="flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-md w-full space-y-8">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 }

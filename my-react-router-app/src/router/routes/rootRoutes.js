@@ -13,7 +13,8 @@ import AuthHome from "../../pages/AuthPages/AuthHome";
 import Login from "../../pages/AuthPages/Login";
 import Signup from "../../pages/AuthPages/Signup";
 
-import PATHS from "../../constant/path.js";
+// import PATHS from "../constants/paths.js"; 
+import PATHS from "../../constants/paths";
 
 const rootRoutes = [
   {

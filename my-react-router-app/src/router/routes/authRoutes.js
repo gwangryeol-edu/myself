@@ -7,7 +7,8 @@ import Login from "../../pages/AuthPages/Login";
 import Signup from "../../pages/AuthPages/Signup";
 
 // ✅ 경로 상수 불러오기
-import PATHS from "../../constant/path.js";
+// import PATHS from "../../constants/paths.js";
+import PATHS from "../../constants/paths";
 
 // ✅ Auth 전용 라우트 배열 정의
 const authRoutes = [

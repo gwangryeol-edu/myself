@@ -15,16 +15,23 @@ import ProductDetail from "../pages/DummyPages/ProductDetail.jsx";
 import DummyHome from "../pages/DummyPages/DummyHome.jsx";
 
 // 경로 상수 불러오기
-import PATHS from "../constant/path.js"; // ✅ 오타 수정 (constants → constant)
+import PATHS from "../constants/paths.js";
 
 // ✅ rootRoutes 불러오기
 import rootRoutes from "./routes/rootRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
+
+import NotFound from "../pages/NotFound.jsx";
 // ✅ createBrowserRouter에 스프레드 연산자로 병합
 const router = createBrowserRouter([
   ...rootRoutes, // Root + Auth 라우트 설정 복사
   ...authRoutes,
   // DummyJSON 라우트 설정 추가
+  {
+    // 모든 주소에 매칭되는 path
+    path: "*", // * : 모든 것에 매핑이 된다
+    Component: NotFound,
+  },
   {
     path: "/dummy",
     Component: DummyLayout,
@@ -49,7 +56,7 @@ const router = createBrowserRouter([
         // 부모 경로 : /dummy (절대 경로 표현)
         // 자식 경로 : products/:productId (상대 경로 표현)
         // 완성 경로 : /dummy/products/:productId
-        path: "product/:productId",
+        path: "products/:productId",
         Component: ProductDetail,
       },
     ],
