@@ -3,10 +3,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 // 리듀서 불러오기
 import counterReducer from "./counterSlice";
+import authSliceReducer from "./authSlice";
 
 // 스토어 생성
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    auth: authSliceReducer,
   },
 });
