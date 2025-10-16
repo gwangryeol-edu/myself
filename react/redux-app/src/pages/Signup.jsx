@@ -31,7 +31,7 @@ export default function Signup() {
     if (isSignup === true) {
       // 회원가입을 성공 했다면
       alert("회원가입을 성공했습니다. 메일함을 확인해주세요.");
-      dispatch(resetIsSignup());
+      dispatch(resetIsSignup);
 
       navigate("/");
     }
